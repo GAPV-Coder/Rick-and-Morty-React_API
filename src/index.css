@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header-hero {
+  position: relative;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-hero input {
+  border: none;
+  outline: none;
+  width: 450px;
+  font-size: 1em;
+  border-radius: 10px;
+  padding: 15px 10px;
+  background: hsla(0,0%,100%,.8);
+}
+
+.header-hero input:focus {
+  background:  hsla(0,0%,100%,.8);
+}
+
+.banner-container {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.banner-container svg {
+  width: 100px;
+}
+
+.location-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 20px 0;
+  margin-top: 60px;
+}
+
+.location-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.location-info {
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.location-info p {
+  margin: 10px;
+}
+
+.location-info p span {
+  font-weight: 500;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 150px;
+  padding: 40px 0;
+  background: #f1f1f1;
+  background: rgb(36, 40, 47);
+}
+
+.card {
+  padding: 20px;
+  margin: 10px;
+  background: white;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 350px;
+  -webkit-box-shadow: 5px 5px 15px rgba(12, 20, 50, 0.2);
+  box-shadow: 5px 5px 15px rgba(12, 20, 50, 0.2);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  background: rgb(62, 71, 85);
+  Color: white;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+  -webkit-box-shadow: 5px 5px 15px rgba(12, 20, 50, 0.4);
+  box-shadow: 5px 5px 15px rgba(12, 20, 50, 0.4);
+}
+
+.resident-avatar {
+  max-width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.resident-avatar img {
+  -webkit-box-shadow: 0 12px 15px rgba(12, 20, 50, 0.2);
+  box-shadow: 0 12px 15px rgba(12, 20, 50, 0.2);
+  border-radius: 50%;
+  width: 100%;
+}
+
+.resident-info {
+  margin-left: 20px;
+}
+
+.resident-info h2 {
+  margin-bottom: 10px;
+}
+
+.resident-info p {
+  margin-bottom: 5px;
+}
+
+.resident-info p:last-child {
+  margin-bottom: 0;
+}
+
+.message {
+  background: #ff8282;
+  padding: 10px 20px;
+  font-style: italic;
+  color: #980303;
+  margin-top: 10px;
+  border-radius: 20px;
+  height: min-content;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background: rgb(36, 40, 47);;
+}
+
+.pagination button {
+  border: 0;
+  background: lightseagreen;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px 2px #0000001a;
+  outline: none;
+  cursor: pointer;
+  color:black;
+}
+
+.pagination button:disabled {
+  cursor: unset;
+}
+
+.pagination button:first-child {
+  margin-right: 15px;
+}
+
+@media (max-width: 600px) {
+  .header-hero {
+    height: 40vh;
+  }
+  .header-hero input {
+    width: 260px;
+  }
+  .banner-container svg {
+    width: 60px;
+  }
+}
+
+@media (max-width: 380px) {
+  .location-container {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .location-info {
+    display: block;
+  }
+  .location-info p {
+    margin-bottom: 10px;
+  }
+}
